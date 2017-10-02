@@ -22,6 +22,7 @@ public struct AttributeQuery<T: NSDictionary>: AttributeQueryProtocol {
     
     public var predicate: NSPredicate? = nil
     public var sortDescriptors: [NSSortDescriptor]? = nil
+    public var relationshipKeyPathsForPrefetching: [String]?
     
     public var returnsDistinctResults = false
     public var propertiesToFetch = [String]()

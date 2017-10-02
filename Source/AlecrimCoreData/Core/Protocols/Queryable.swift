@@ -13,6 +13,7 @@ public protocol Queryable: Enumerable {
     
     var predicate: NSPredicate? { get set }
     var sortDescriptors: [NSSortDescriptor]? { get set }
+    var relationshipKeyPathsForPrefetching: [String]? { get set }
     
 }
 

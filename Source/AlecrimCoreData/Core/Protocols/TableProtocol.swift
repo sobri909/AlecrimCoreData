@@ -105,6 +105,7 @@ extension TableProtocol {
         
         fetchRequest.predicate = self.predicate
         fetchRequest.sortDescriptors = self.sortDescriptors
+        fetchRequest.relationshipKeyPathsForPrefetching = self.relationshipKeyPathsForPrefetching
         
         return fetchRequest
     }

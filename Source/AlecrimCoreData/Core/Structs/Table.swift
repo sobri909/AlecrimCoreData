@@ -24,6 +24,7 @@ public struct Table<T: NSManagedObject>: TableProtocol {
     
     public var predicate: NSPredicate? = nil
     public var sortDescriptors: [NSSortDescriptor]? = nil
+    public var relationshipKeyPathsForPrefetching: [String]? = nil
     
     public init(context: NSManagedObjectContext) {
         self.context = context
